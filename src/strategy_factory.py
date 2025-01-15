@@ -1,5 +1,7 @@
-from src.compare_all_moves_strategy import CompareAllMovesSimple, HuristicCompareAllMoves, MinimaxPlayer
+from src.compare_all_moves_strategy import CompareAllMovesSimple, HuristicCompareAllMoves
 from src.strategies import MoveFurthestBackStrategy, HumanStrategy, MoveRandomPiece
+from src.MCTStree import MCTSTreeStrategy
+from src.Minimax import MinimaxStrategy
 
 
 class StrategyFactory:
@@ -19,6 +21,7 @@ class StrategyFactory:
             CompareAllMovesSimple,
             HumanStrategy,
             HuristicCompareAllMoves,
-            MinimaxPlayer
+            MinimaxStrategy,
+			MCTSTreeStrategy
         ]
         return strategies
