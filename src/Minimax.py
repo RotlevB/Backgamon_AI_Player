@@ -88,7 +88,7 @@ class MinimaxNode:
 		# Phase logic
 		if pieces_out_of_home < 3 and average_distance_to_home < 12:
 			phase = 'late'
-		elif average_distance_to_home < 18 or opponent_pieces_home >= 3:
+		elif average_distance_to_home < 18:
 			phase = 'mid'
 		else:
 			phase = 'early'
